@@ -1,0 +1,39 @@
+a{
+	color: #22BCE0;
+}
+figure{
+	margin: 0px;
+}
+body{
+	background: #EEEEEE;
+	font-family: arial;
+	font-size: 16px;
+}
+header{
+	background: #343B54;
+	color: white;
+}
+header #logo{
+	display: inline-block;
+}
+header #logo img{
+	border-right: 1px solid white;
+	margin-right: 1em;
+	padding-right: 0.5em;
+	width: 52px;
+}
+header h1{
+	display: inline-block;
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 2em;
+	margin-right: 0.5em;
+	vertical-align: top;
+}
+header #avatar{
+	display: inline-block;	
+}
+header #avatar img{
+	border-radius:50%;
+	width: 55px;
+}
