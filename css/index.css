@@ -25,8 +25,8 @@ header #logo img{
 header #titulo_header{
 	display: inline-block;
 	margin-right: 0.5em;
-	vertical-align: top;
 	max-width: 65%;
+	vertical-align: top;
 }
 header #titulo_header h1{
 	font-size: 16px;
@@ -34,25 +34,24 @@ header #titulo_header h1{
 }
 header #avatar{
 	position: absolute;
-	top: 0;
 	right: 0;
+	top: 0;
 }
 header #avatar img{
 	border-radius:50%;
-	width: 55px;
 	padding: 0.4em 0.5em 0.3em 0.3em;
+	width: 55px;
 }
 
 nav{
-	position: relative;
 	background: #80BCA3;
 	padding: 0 0.5em;
+	position: relative;
 }
 nav ul #publicar_nav{
 	position: absolute;
 	right: 0;
 	top: -0.3em;
-
 }
 nav ul #publicar_nav a{
 	background: #22BCE0;
@@ -80,46 +79,89 @@ nav ul li a{
 	text-decoration: none;
 }
 footer{
-	padding: 0.8em;
 	background: #22BCE0;
-	text-align: center;
 	color: rgba(255,255,255,0.8);
+	padding: 0.8em;
+	text-align: center;
 }
 
 #contenido{
 	margin: 1em;
 }
 
-#contenido .item{
+#contenido .item .item_principal{
 	background: white;
-	border-bottom: 3px solid #22BCE0
+	border-bottom: 3px solid #22BCE0;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
 }
 #contenido .item .imagen_item{
-	display: inline-block;
+	width: 100px;
 }
 #contenido .item .imagen_item img{
-	width: 96px;
 	margin-right: 1em;
+	width: 96px;
 }
 #contenido .item .contenido_derecha{
-	display: inline-block;
-	vertical-align: top;
+	margin-left: 1em;
+	-webkit-flex: 1;
+	-moz-flex: 1;
+	-ms-flex: 1;
+	-o-flex: 1;
+	flex: 1;	
 }
 #contenido .item .titulo_item{
 	font-size: 1.2em;
 	font-style: italic;
 }
+
 #contenido .item .titulo_item a{
-	text-decoration: none;
 	color: #444;
+	text-decoration: none;
 }
 #contenido .item .autor_item{
 	color: #AAA;
 }
 #contenido .item .datos_item{
-	
+	margin: 1em 0;
+	text-align: right;
+}
+#contenido .item .datos_item .tag_item{
+	background: #F45024;
+	border-radius: 0.5em;
+	color: white;
+	float: left;
+	padding: 2px 13px;
+	text-decoration: none;
+}
+#contenido .item .datos_item .fecha_item{
+	color: #AAA;
+	margin-right: 1em;
 }
 
+#contenido .item .item_footer{
+	background: white;
+	border-radius: 0 0 0.5em 0.5em;
+	display: table;
+	margin: 0 auto 0.7em auto;
+	padding: 0.3em;
+	width: 90%;
+}
+#contenido .item .item_footer .item_footer_left{
+	display: table-cell;
+	width: 30%;
+}
+#contenido .item .item_footer .item_footer_right{
+	display: table-cell;
+	text-align: right;
+	width: 70%;
+}
+#contenido .item .item_footer a{
+	margin: 0 0.4em;
+}
 
 footer p:first-child{
 	margin-bottom: 0;
