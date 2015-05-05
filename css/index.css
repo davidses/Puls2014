@@ -27,17 +27,14 @@
 	content: "\e905";
 	margin-right: 0.8em;
 }
-
 .icon-estrella:before {
 	content: "\e9d9";
 	color: #F2CC1B;
 }
-
 .icon-f-arriba:before {
 	content: "\ea41";
 	color: green;
 }
-
 .icon-f-abajo:before {
 	content: "\ea43";
 	color: red;
@@ -48,11 +45,9 @@
 a{
 	color: #22BCE0;
 }
-
 aside{
 	display: none;
 }
-
 figure{
 	margin: 0px;
 }
@@ -69,24 +64,21 @@ header #logo{
 	display: inline-block;
 	border-right: 1px solid white;
 	padding: 0.5em 0.5em 0.3em 0.3em;
-	margin-right: 1em;
-	
+	margin-right: 1em;	
 }
 header #logo img{
-	width: 52px;
+	width: 52px;	
+}
+header #logo img:hover{
 	-webkit-transition: .5s;
 	-moz-transition: .5s;
 	-o-transition: .5s;
 	-ms-transition: .5s;
-}
-
-header #logo img:hover{
 	-webkit-transform:rotate(360deg);
 	-moz-transform:rotate(360deg);
 	-o-transform:rotate(360deg);
 	-ms-transform:rotate(360deg);
 }
-
 header #titulo_header{
 	display: inline-block;
 	margin-right: 0.5em;
@@ -107,7 +99,6 @@ header #avatar img{
 	padding: 0.4em 0.5em 0.3em 0.3em;
 	width: 55px;
 }
-
 nav{
 	background: #80BCA3;
 	/*padding: 0 0.5em;*/
@@ -139,7 +130,6 @@ nav ul #publicar_nav a:hover:before{
 	font-size: 20px;
 	top: 0.6em;
 }
-
 nav ul{
 	list-style: none;
 	margin: 0;
@@ -166,11 +156,9 @@ footer{
 	text-align: center;
 }
 
-
 #contenido{
 	margin: 1em;
 }
-
 #contenido .item .item_principal{
 	background: white;
 	border-bottom: 3px solid #22BCE0;
@@ -223,7 +211,6 @@ footer{
 	color: #AAA;
 	margin-right: 1em;
 }
-
 #contenido .item .item_footer{
 	background: white;
 	border-radius: 0 0 0.5em 0.5em;
@@ -259,6 +246,38 @@ footer p:last-child:before{
 footer p:last-child:after{
 	content: " -";
 }
+
+
+/* -------------- FORMULARIO ------------------*/
+
+
+.formulario{
+	display: none;
+	padding: 1em;
+	text-align: right;
+}
+.formulario input{
+	border-radius: 5px;
+	border: 1px solid #CCC;
+	padding: 0.2em 0.6em;
+}
+.formulario input[type="submit"]{
+	background: #22BCE0;
+	border-color: #22BCE0;
+  	box-shadow: rgba(0,0,0,0.5) 5px 5px 20px;
+  	color: white;
+  	font-style: italic;
+  	text-decoration: none;
+  	text-shadow: rgba(0,0,0,0.5) 2px 2px 5px;
+}
+
+
+
+
+
+
+
+
 
 @media screen and (min-width: 800px){
 	.item{
