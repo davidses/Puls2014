@@ -8,7 +8,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/index.css">
-	<script src="js/prefixfree.js"></script>
+	<!--<script src="js/prefixfree.js"></script>-->
 </head>
 <body>
 	
@@ -22,7 +22,7 @@
 			</h1>
 		</div>
 		<figure id="avatar">
-			<img src="img/avatar.jpg" alt="Avatar">
+			<!-- <img src="img/avatar.jpg" alt="Avatar"> -->
 		</figure>
 	</header>
 
@@ -39,6 +39,9 @@
 		</ul>
 	</nav>
 
+	<div id="geo"></div>
+	<div id="clima"></div>
+
 	<form action="" id="formulario" class="formulario">
 		<input type="text" id="titulo" placeholder="Título" required>
 		<input type="url" id="url" placeholder="Link" required>
@@ -47,8 +50,8 @@
 
 	<aside>
 		<video width="320" height="240" autoplay controls>
-			<source src="../videos/lecturas.m4v" type="video/mp4">
-			<source src="../videos/lecturas.ogg" type="video/ogg">
+			<source src="videos/lecturas.m4v" type="video/mp4">
+			<source src="videos/lecturas.ogg" type="video/ogg">
 			<!-- Actualiza tu navegador -->
 		</video>
 	</aside>
@@ -201,8 +204,26 @@
 		</p>
 	</footer>
   
-	<!--<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="js/index.js"></script>
+	<script src="js/geo.js"></script>
+	<script src="js/ajax.js"></script>
+		 <!-- ESTE EVENTO SE EJECUTA CUANDO CARGA TODA LA PAGINA
+		window.onload = function(){
+			console.log("Ya se disparo el evento ONLOAD");
+		}
+
+		 ESTE EVENTO SE EJECUTA UNA VEZ ESTE LISTO JAVASCRIPT
+		 AQUI YA PODEMOS EMPEZAR A TRABAJAR CON JS SIN NECESIDAD QUE ALLA 
+		 CARGADO TODA LA PAGINA
+		$(function(){
+			console.log("Ya se disparo el evento DOMContentLoaded");
+		}); -->
+	<script>
+		$(function(){
+				
+		});
+	</script>
+
 </body>
 </html>

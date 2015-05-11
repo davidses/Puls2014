@@ -6,8 +6,9 @@ var $list = $("#contenido");
 var $post = $(".item").first();
 
 
-function mostrarformulario(){
+function toggleform(){
 	$form.slideToggle();
+	$list.slideToggle();
 	return false; // PARA QUE NO RECARGUE LA PAGINA POR CONSECUENCIA DE HREF="#"
 }
 
@@ -21,10 +22,10 @@ function agregarPost(){
 		.attr("href", url);
 
 	$clone.hide();
-
 	$list.prepend($clone);
-
 	$clone.fadeIn();
+
+	toggleform(); 
 
 	return false;
 }
@@ -33,5 +34,5 @@ function agregarPost(){
 
 // EVENTOS
 
-$button.click(mostrarformulario);
+$button.click(toggleform);
 $form.on("submit", agregarPost);
